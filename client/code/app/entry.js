@@ -8,3 +8,5 @@ ss.server.on('disconnect', function(){
 ss.server.on('reconnect', function(){
   console.log('Connection back up :-)');
 });
+
+require('./app.ls');
