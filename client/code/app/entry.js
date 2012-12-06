@@ -10,3 +10,6 @@ ss.server.on('reconnect', function(){
 });
 
 require('./app.ls');
+require('./controllers.ls');
+require('./services.ls');
+require('./filters.ls');

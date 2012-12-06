@@ -3,16 +3,18 @@ basePath = '../';
 files = [
   JASMINE,
   JASMINE_ADAPTER,
-  'app/lib/angular/angular.js',
-  'app/lib/angular/angular-*.js',
+  'client/static/assets/app/*.js',
   'test/lib/angular/angular-mocks.js',
-  'app/js/**/*.js',
   'test/unit/**/*.js'
 ];
 
 autoWatch = true;
 
 browsers = ['Chrome'];
+
+preprocessors ={
+  '**/*.ls': 'live'
+}
 
 junitReporter = {
   outputFile: 'test_out/unit.xml',

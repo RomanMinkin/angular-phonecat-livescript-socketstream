@@ -1,6 +1,7 @@
+/node_modules
+/client/static/assets
 *.swp
 *.swo
-/node_modules
 **/.DS_Store
 nbproject
 manifest.mf
