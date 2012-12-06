@@ -15,6 +15,8 @@ ss.client.templateEngine.use 'angular', '/partials'
 ss.client.formatters.add require \ss-livescript
 
 server = http.Server ss.http.middleware
-server.listen 4000
 ss.start server
-console.log 'server on http://localhost:4000'
+
+if not process.env.SS_PACK
+  server.listen 4000
+  console.log 'server on http://localhost:4000'
