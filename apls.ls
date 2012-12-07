@@ -5,7 +5,7 @@ ss = require \socketstream
 
 ss.client.define \app,
   view: \index.html
-  css: ['app.css','bootstrap.css']
+  css: ['app.less','bootstrap.css']
   code: ['libs', 'app']
   tmpl: ['partials']
 
@@ -14,7 +14,7 @@ ss.http.router.on \/app, (req, res)->
 
 ss.client.define \e2e,
   view: \runner.html
-  css: ['app.css','bootstrap.css']
+  css: []
   code: ['e2e']
   tmpl: []
 ss.http.router.on \/test/e2e/runner.html, (req, res)->
@@ -23,6 +23,7 @@ ss.http.router.on \/test/e2e/runner.html, (req, res)->
 ss.client.templateEngine.use 'angular', '/partials'
 ss.client.formatters.add require \ss-livescript
 ss.client.formatters.add require \ss-jade
+ss.client.formatters.add require \ss-less
 ss.client.packAssets()  if ss.env is "production"
 
 
