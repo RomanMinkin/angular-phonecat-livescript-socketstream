@@ -3,7 +3,7 @@ basePath = '../';
 files = [
   ANGULAR_SCENARIO,
   ANGULAR_SCENARIO_ADAPTER,
-  'test/e2e/**/*.js'
+  'client/code/e2e/**/*.ls'
 ];
 
 autoWatch = false;
@@ -13,7 +13,11 @@ browsers = ['Chrome'];
 singleRun = true;
 
 proxies = {
-  '/': 'http://localhost:8000/'
+  '/': 'http://localhost:4000/'
+};
+
+preprocessors ={
+  '**/*.ls': 'live'
 };
 
 junitReporter = {

@@ -17,7 +17,7 @@ let ii = it
       $httpBackend = undefined
       beforeEach inject((_$httpBackend_, $rootScope, $controller) ->
         $httpBackend := _$httpBackend_
-        $httpBackend.expectGET("phones/phones.json").respond [
+        $httpBackend.expectGET("/phones/phones.json").respond [
           name: "Nexus S"
         ,
           name: "Motorola DROID"
@@ -50,7 +50,7 @@ let ii = it
 
       beforeEach inject((_$httpBackend_, $rootScope, $routeParams, $controller) ->
         $httpBackend := _$httpBackend_
-        $httpBackend.expectGET("phones/xyz.json").respond xyzPhoneData()
+        $httpBackend.expectGET("/phones/xyz.json").respond xyzPhoneData()
         $routeParams.phoneId = "xyz"
         scope := $rootScope.$new()
         ctrl := $controller(PhoneDetailCtrl,
