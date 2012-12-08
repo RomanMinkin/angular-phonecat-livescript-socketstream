@@ -1,7 +1,9 @@
-# AngularJS Phone Catalog Tutorial Application, in LiveScript with SocketStream 0.3.2
+# AngularJS Phone Catalog Tutorial Application, in LiveScript with SocketStream 0.3.2, LESS, Jade, including Unit and E2E Tests
 
 ## Motivation
-Refer to this [thread](https://groups.google.com/d/topic/socketstream/jDDCkQJpsDM/discussion)
+- use SocketStream
+- make AngularJS Unit and E2E Tests work (refer to this [thread](https://groups.google.com/d/topic/socketstream/jDDCkQJpsDM/discussion))
+- use LiveScript, LESS and Jade
 
 ## Install
     $./scripts/install.sh
