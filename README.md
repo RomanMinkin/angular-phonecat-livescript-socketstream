@@ -1,5 +1,8 @@
 # AngularJS Phone Catalog Tutorial Application, in LiveScript with SocketStream 0.3.2
 
+## Motivation
+Refer to this [thread](https://groups.google.com/d/topic/socketstream/jDDCkQJpsDM/discussion)
+
 ## Install
     $./scripts/install.sh
 inside which performs
@@ -27,3 +30,5 @@ url [http://localhost:4000/test/e2e/runner.html](http://localhost:4000/test/e2e/
 
 ### Testacular
     $./scripts/e2e-test.sh 
+
+
