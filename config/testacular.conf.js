@@ -9,9 +9,11 @@ files = [
   'test/unit/**/*.ls'
 ];
 
-autoWatch = true;
+autoWatch = false;
 
-browsers = ['Chrome'];
+browsers = ['PhantomJS'];
+
+singleRun = true;
 
 preprocessors ={
   '**/*.ls': 'live'
