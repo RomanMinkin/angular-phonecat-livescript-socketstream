@@ -13,3 +13,12 @@ require('./app.ls');
 require('./controllers.ls');
 require('./services.ls');
 require('./filters.ls');
+
+ss.server.on('ready', function(){
+
+  angular.element().ready(function(){
+    console.log('app start');
+
+  });
+
+});

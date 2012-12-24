@@ -20,6 +20,14 @@ ss.client.define \e2e,
 ss.http.router.on \/test/e2e/runner.html, (req, res)->
   res.serve \e2e
 
+ss.client.define \test-client,
+  view: \test-client.jade
+  css: ['mocha']
+  code: ['libs','app','test-client']
+  tmpl: []
+ss.http.router.on \/test/client, (req, res)->
+  res.serve \test-client
+
 ss.client.templateEngine.use 'angular', '/partials'
 ss.client.formatters.add require \ss-livescript
 ss.client.formatters.add require \ss-jade

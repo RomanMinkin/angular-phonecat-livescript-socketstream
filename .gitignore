@@ -2,6 +2,7 @@
 /client/static/assets
 *.swp
 *.swo
+*~
 **/.DS_Store
 nbproject
 manifest.mf
