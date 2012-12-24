@@ -12,17 +12,17 @@ ss.server.on('reconnect', function(){
 });
 
 // require('ssAngular');
-require('/services.ls');
-require('/filters.ls');
-require('/controllers.ls');
+require('/services');
+require('/filters');
+require('/controllers');
 // require('/directives.ls');
-require('/app.ls');
+require('/app');
 
 ss.server.on('ready', function(){
 
   /* angular.element().ready(function(){ */
-    require('./specs/controllersSpec.ls');
-    require('./specs/filtersSpec');
+    require('./controllersSpec.ls');
+    require('./filtersSpec');
     if (window.mochaPhantomJS) { mochaPhantomJS.run(); }
       else { mocha.run(); }
   // });

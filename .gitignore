@@ -1,3 +1,5 @@
+/client/code/app-js
+/client/code/app-cov
 /node_modules
 /client/static/assets
 *.swp

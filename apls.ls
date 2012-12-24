@@ -28,6 +28,15 @@ ss.client.define \test-client,
 ss.http.router.on \/test/client, (req, res)->
   res.serve \test-client
 
+ss.client.define \test-client-cov,
+  view: \test-client-cov.jade
+  css: ['mocha']
+  code: ['libs','app-cov', 'test-client/libs', 'test-client/specs', 'test-client-cov']
+  tmpl: []
+
+ss.http.router.on \/test/client/cov, (req, res)->
+  res.serve \test-client-cov
+
 ss.client.templateEngine.use 'angular', '/partials'
 ss.client.formatters.add require \ss-livescript
 ss.client.formatters.add require \ss-jade
