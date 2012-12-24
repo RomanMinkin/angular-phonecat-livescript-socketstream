@@ -1,5 +1,6 @@
 #!/bin/bash
 
-BASE_DIR=`dirname $0`
+BASE_DIR=`dirname $0`/..
 
-nodemon --exec ./$BASE_DIR/test-once.sh
+cd $BASE_DIR
+nodemon --watch client --exec 'bash' scripts/test-mocha.sh

@@ -1,4 +1,4 @@
-# AngularJS Phone Catalog Tutorial Application, in LiveScript with SocketStream 0.3.2, LESS, Jade, including Unit and E2E Tests
+# AngularJS Phone Catalog Tutorial Application, in LiveScript with SocketStream 0.3.2
 
 ## Motivation
 - use SocketStream
@@ -9,7 +9,7 @@
     $./scripts/install.sh
 inside which performs
 
-    npm -g install testacular@0.5.5
+    npm -g install testacular@0.5.6
 to supports test spec files in LiveScript
 
 ## Start Server
@@ -17,9 +17,17 @@ to supports test spec files in LiveScript
 server listen on [http://localhost:4000/app](http://localhost:4000/app)
 
 ## Unit Test
-use SS\_PACK=1 and load the minified js in client/static/assets, in which 'require' is defined:
 
+### Mocha in browser
+[http://localhost:4000/test/client](http://localhost:4000/test/client)
+
+### Mocha with PhantomJS
     $./scripts/test.sh 
+
+### Jasmine with Testacular
+use SS\_PACK=1 and load the minified js in client/static/assets, in which SS style 'require' is defined:
+
+    $./scripts/test-jasmine.sh 
 will run 
 
     ./scripts/pack.sh

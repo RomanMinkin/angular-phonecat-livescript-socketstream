@@ -2,4 +2,4 @@
 
 BASE_DIR=`dirname $0`
 
-nodemon --exec livescript $BASE_DIR/../apls.ls
+nodemon --watch server --exec livescript $BASE_DIR/../apls.ls
