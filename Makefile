@@ -1,8 +1,7 @@
-all: js test-cov clean
-
-test:
+all: test-cov clean
 
 test-cov: cov
+	mocha-phantomjs -R json-cov http://localhost:4000/test/client/cov | json2htmlcov > client/static/coverage.html
 
 cov: js
 	rm -rf client/code/app-cov
@@ -20,4 +19,4 @@ js-clean:
 
 clean: cov-clean js-clean
 
-.PHONY all test test-cov cov cov-clean js js-clean clean
+.PHONY: all test-cov cov cov-clean js js-clean clean
