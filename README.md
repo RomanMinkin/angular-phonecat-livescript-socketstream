@@ -1,5 +1,7 @@
 # AngularJS Phone Catalog Tutorial Application, in LiveScript with SocketStream 0.3.2
 
+[![Build Status](https://travis-ci.org/yiwang/angular-phonecat-livescript-socketstream.png?branch=master)](https://travis-ci.org/yiwang/angular-phonecat-livescript-socketstream)
+
 ## Motivation
 - use SocketStream
 - make AngularJS unit and E2E Tests work (refer to this [thread](https://groups.google.com/d/topic/socketstream/jDDCkQJpsDM/discussion))
